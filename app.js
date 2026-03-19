@@ -489,7 +489,7 @@ function renderFooter() {
         `).join("")}
       </div>
       <div class="footer-bottom">
-        <p>© 2025 AIPreitenos — Proiect educativ non-comercial</p>
+        <p>Proiect educativ non-comercial</p>
       </div>
     </div>
   `;
