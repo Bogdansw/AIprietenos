@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Prietenos — Ghid despre Inteligența Artificială</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <img src="images/logo-icon.svg" alt="AI Prietenos" class="logo-img" onerror="this.style.display='none'" />
+        <span>AI<strong>Prietenos</strong></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#ce-este">Ce este AI</a></li>
+        <li><a href="#domenii">Domenii</a></li>
+        <li><a href="#avantaje">Avantaje</a></li>
+        <li><a href="#riscuri">Riscuri</a></li>
+        <li><a href="#siguranta">Siguranță</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <button class="nav-cta" onclick="document.getElementById('ce-este').scrollIntoView({behavior:'smooth'})">Hai să explorăm!</button>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="floating-shapes" id="floating-shapes"></div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <img src="images/icon-star.svg" alt="" class="badge-icon" onerror="this.style.display='none'" />
+          Ghid educativ 2025
+        </div>
+        <h1>Înțelege<br/><em>Inteligența<br/>Artificială</em></h1>
+        <p class="hero-sub">Descoperă ce este AI, cum funcționează și cum îl poți folosi responsabil — simplu, clar și fără complicații!</p>
+        <div class="hero-btns">
+          <button class="btn-primary" onclick="document.getElementById('ce-este').scrollIntoView({behavior:'smooth'})">
+            <img src="images/icon-explore.svg" alt="" class="btn-icon" onerror="this.style.display='none'" />
+            Explorează AI
+          </button>
+          <button class="btn-ghost" onclick="document.getElementById('siguranta').scrollIntoView({behavior:'smooth'})">Cum să fii în siguranță</button>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-img-block">
+          <img src="https://blocks.astratic.com/img/general-img-landscape.png" alt="AI Ilustrație" class="hero-main-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="photo-gallery-section">
+    <div class="container">
+      <div class="section-label">Galerie</div>
+      <h2 class="section-title">AI în lumea reală</h2>
+      <p class="section-sub">Exemple vizuale ale inteligenței artificiale în acțiune, din domeniile care ne înconjoară zilnic.</p>
+      <div class="photo-gallery" id="photo-gallery"></div>
+    </div>
+  </section>
+
+  <section id="ce-este" class="section">
+    <div class="container">
+      <div id="ce-este-content"></div>
+    </div>
+  </section>
+
+  <section id="domenii" class="section section-soft">
+    <div class="container">
+      <div id="domenii-content"></div>
+    </div>
+  </section>
+
+  <section id="avantaje" class="section">
+    <div class="container">
+      <div id="avantaje-content"></div>
+    </div>
+  </section>
+
+  <section id="riscuri" class="section section-warm">
+    <div class="container">
+      <div id="riscuri-content"></div>
+    </div>
+  </section>
+
+  <section id="siguranta" class="section section-soft">
+    <div class="container">
+      <div id="siguranta-content"></div>
+    </div>
+  </section>
+
+  <section id="comparatie" class="section">
+    <div class="container">
+      <div class="section-label">06 — Comparație</div>
+      <h2 class="section-title">Utilizare corectă vs. incorectă</h2>
+      <p class="section-sub">Diferența dintre un instrument util și unul dăunător stă în modul de utilizare. Inteligența artificială poate ajuta oamenii în multe activități, însă trebuie folosită responsabil.</p>
+      <div class="compare-wrap" id="compare-grid"></div>
+    </div>
+  </section>
+
+  <section id="quiz-section" class="section section-quiz-cta">
+    <div class="container">
+      <div class="quiz-cta-inner">
+        <div class="quiz-cta-text">
+          <div class="section-label">Mini Quiz</div>
+          <h2 class="section-title">Testează-ți cunoștințele!</h2>
+          <p class="section-sub">Ai citit ghidul? Acum e timpul să vedem cât de bine ai înțeles. Răspunde la câteva întrebări despre AI responsabil.</p>
+          <a href="minigames.html" class="btn-primary quiz-cta-btn">
+            <img src="images/icon-quiz.svg" alt="" class="btn-icon" onerror="this.style.display='none'" />
+            Deschide Quiz-ul
+          </a>
+        </div>
+        <div class="quiz-cta-image">
+          <img src="images/quiz-illustration.svg" alt="Quiz ilustrație" class="quiz-hero-img" onerror="this.replaceWith(document.createTextNode(''))" />
+          <div class="quiz-img-placeholder">
+            <div class="qip-inner">
+              <div class="qip-icon">
+                <img src="images/icon-gamepad.svg" alt="" onerror="this.style.display='none'" />
+              </div>
+              <span>Quiz ilustrație</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-label">07 — Întrebări</div>
+      <h2 class="section-title">Întrebări Frecvente</h2>
+      <p class="section-sub">Răspunsuri la cele mai comune nelămuriri despre inteligența artificială.</p>
+      <div class="faq-list" id="faq-list"></div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div id="footer-content"></div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
