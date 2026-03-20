@@ -27,7 +27,7 @@ const DATA = {
   ],
 
   ceEste: {
-    label: "01 - Definiție",
+    label: "01 — Definiție",
     title: "Ce este Inteligența Artificială?",
     paragraphs: [
       "<strong>Inteligența artificială (AI)</strong> este o tehnologie care permite calculatoarelor și programelor să analizeze informații, să învețe din date și să ofere răspunsuri sau predicții.",
@@ -41,7 +41,7 @@ const DATA = {
   },
 
   domenii: {
-    label: "02 - Aplicații",
+    label: "02 — Aplicații",
     title: "Unde este folosit AI",
     paragraphs: [
       "Inteligența artificială a pătruns în aproape toate domeniile activității umane. De la aplicații pe care le folosim zilnic până la sisteme complexe din industrie, AI ajută la <strong>automatizarea proceselor</strong> și la analiza rapidă a datelor.",
@@ -60,7 +60,7 @@ const DATA = {
   },
 
   avantaje: {
-    label: "03 - Beneficii",
+    label: "03 — Beneficii",
     title: "Avantajele AI",
     paragraphs: [
       "Tehnologia AI aduce beneficii reale atunci când este utilizată corect. Aceasta poate <strong>accelera procesele</strong>, poate reduce erorile și poate ajuta la luarea unor decizii mai informate.",
@@ -80,7 +80,7 @@ const DATA = {
   },
 
   riscuri: {
-    label: "04 - Atenție",
+    label: "04 — Atenție",
     title: "Riscuri și Provocări",
     paragraphs: [
       "O utilizare responsabilă a inteligenței artificiale presupune să înțelegem și riscurile pe care le poate implica. Deși AI poate fi foarte util, <strong>utilizarea necorespunzătoare</strong> poate duce la probleme serioase.",
@@ -100,7 +100,7 @@ const DATA = {
   },
 
   siguranta: {
-    label: "05 - Bune practici",
+    label: "05 — Bune practici",
     title: "Cum să folosești AI în siguranță",
     paragraphs: [
       "Pentru a folosi inteligența artificială în mod responsabil, este important să respectăm câteva reguli simple.",
@@ -489,7 +489,7 @@ function renderFooter() {
         `).join("")}
       </div>
       <div class="footer-bottom">
-        <p>Proiect educativ non-comercial</p>
+        <p>Proiect educativ non-comercial realizat pentru Ideathon</p>
       </div>
     </div>
   `;

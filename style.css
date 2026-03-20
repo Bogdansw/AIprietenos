@@ -964,6 +964,31 @@ body {
 .footer-links a { color: rgba(255,255,255,0.35); text-decoration: none; font-size: 0.82rem; font-weight: 600; transition: color var(--transition-smooth); }
 .footer-links a:hover { color: var(--purple-light); }
 
+.scoala-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  margin-top: 16px;
+}
+.scoala-text p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.85;
+  max-width: var(--text-max);
+  margin-bottom: 16px;
+}
+.scoala-image {
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+.scoala-image img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(28px);
