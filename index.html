@@ -3,66 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Prietenos — Ghid despre Inteligența Artificială</title>
+  <title>AI Prietenos - Ghid despre Inteligenta Artificiala</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&display=block" rel="stylesheet" />
 </head>
 <body>
 
   <nav id="navbar">
     <div class="nav-inner">
       <div class="nav-logo">
-        <img src="images/logo-icon.svg" alt="AI Prietenos" class="logo-img" onerror="this.style.display='none'" />
-        <span>AI<strong>Prietenos</strong></span>
+        <span>AI</span><span class="logo-accent">PRIETENOS</span>
+        <span class="nav-team-badge">by CyberShield</span>
       </div>
       <ul class="nav-links">
-        <li><a href="#ce-este">Ce este AI</a></li>
-        <li><a href="#domenii">Domenii</a></li>
-        <li><a href="#avantaje">Avantaje</a></li>
-        <li><a href="#riscuri">Riscuri</a></li>
-        <li><a href="#siguranta">Siguranță</a></li>
+        <li><a href="#ce-este">CE ESTE</a></li>
+        <li><a href="#domenii">DOMENII</a></li>
+        <li><a href="#avantaje">AVANTAJE</a></li>
+        <li><a href="#riscuri">RISCURI</a></li>
+        <li><a href="#siguranta">SIGURANȚĂ</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
-      <button class="nav-cta" onclick="document.getElementById('scoala').scrollIntoView({behavior:'smooth'})">AI în școala noastră</button>
+      <button class="nav-cta" onclick="document.getElementById('scoala').scrollIntoView({behavior:'smooth'})">AI ÎN ȘCOALA NOASTRĂ</button>
     </div>
   </nav>
 
   <section id="hero">
-    <div class="floating-shapes" id="floating-shapes"></div>
+    <div class="hero-pattern"></div>
     <div class="hero-inner">
       <div class="hero-text">
-        <div class="hero-badge">
-          <img src="images/icon-star.svg" alt="" class="badge-icon" onerror="this.style.display='none'" />
-          Ghid educativ 2026
-        </div>
-        <h1>Înțelege<br/><em>Inteligența<br/>Artificială</em></h1>
-        <p class="hero-sub">Descoperă ce este AI, cum funcționează și cum îl poți folosi responsabil — simplu, clar și fără complicații!</p>
+        <div class="hero-badge">GHID EDUCATIV 2026</div>
+        <div class="hero-team-tag">Echipa <strong>CyberShield</strong> - Ideathon</div>
+        <h1>
+          <span class="h1-line1">INTELEGE</span>
+          <span class="h1-line2">INTELIGENTA</span>
+          <span class="h1-line3">ARTIFICIALA</span>
+        </h1>
+        <p class="hero-sub">Descoperă ce este AI, cum funcționează și cum îl poți folosi responsabil - simplu, clar și fără complicații!</p>
         <div class="hero-btns">
-          <button class="btn-primary" onclick="document.getElementById('ce-este').scrollIntoView({behavior:'smooth'})">
-            <img src="images/icon-explore.svg" alt="" class="btn-icon" onerror="this.style.display='none'" />
-            Explorează AI
-          </button>
-          <button class="btn-ghost" onclick="document.getElementById('siguranta').scrollIntoView({behavior:'smooth'})">Cum să fii în siguranță</button>
+          <button class="btn-primary" onclick="document.getElementById('ce-este').scrollIntoView({behavior:'smooth'})">EXPLOREAZĂ AI</button>
+          <button class="btn-secondary" onclick="document.getElementById('siguranta').scrollIntoView({behavior:'smooth'})">CUM SA FII IN SIGURANȚĂ</button>
         </div>
       </div>
       <div class="hero-visual">
         <div class="hero-img-block">
-          <img src="https://blocks.astratic.com/img/general-img-landscape.png" alt="AI Ilustrație" class="hero-main-img" />
+          <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=900&q=80" alt="AI" />
         </div>
+        <div class="hero-deco-1">ROBOT</div>
+        <div class="hero-deco-2">AI</div>
       </div>
     </div>
   </section>
 
-  <section class="photo-gallery-section">
-    <div class="container">
-      <div class="section-label">Galerie</div>
-      <h2 class="section-title">AI în lumea reală</h2>
-      <p class="section-sub">Exemple vizuale ale inteligenței artificiale în acțiune, din domeniile care ne înconjoară zilnic.</p>
-      <div class="photo-gallery" id="photo-gallery"></div>
-    </div>
-  </section>
+  <div class="marquee-bar">
+    <div class="marquee-track" id="marquee-track"></div>
+  </div>
 
   <section id="ce-este" class="section">
     <div class="container">
@@ -70,7 +66,7 @@
     </div>
   </section>
 
-  <section id="domenii" class="section section-soft">
+  <section id="domenii" class="section section-yellow">
     <div class="container">
       <div id="domenii-content"></div>
     </div>
@@ -82,49 +78,42 @@
     </div>
   </section>
 
-  <section id="riscuri" class="section section-warm">
+  <section id="riscuri" class="section section-violet">
     <div class="container">
       <div id="riscuri-content"></div>
     </div>
   </section>
 
-  <section id="siguranta" class="section section-soft">
+  <section id="siguranta" class="section">
     <div class="container">
       <div id="siguranta-content"></div>
     </div>
   </section>
 
-  <section id="comparatie" class="section">
+  <section id="comparatie" class="section section-black">
     <div class="container">
-      <div class="section-label">06 — Comparație</div>
-      <h2 class="section-title">Utilizare corectă vs. incorectă</h2>
-      <p class="section-sub">Diferența dintre un instrument util și unul dăunător stă în modul de utilizare. Inteligența artificială poate ajuta oamenii în multe activități, însă trebuie folosită responsabil.</p>
+      <div class="section-tag tag-white">06 - COMPARAȚIE</div>
+      <h2 class="section-title title-white">CORECT VS. INCORECT</h2>
+      <p class="section-sub sub-white">Diferența dintre un instrument util și unul dăunător stă în modul de utilizare.</p>
       <div class="compare-wrap" id="compare-grid"></div>
     </div>
   </section>
 
-  <section id="quiz-section" class="section section-quiz-cta">
+  <section id="quiz-section" class="section section-red">
     <div class="container">
-      <div class="quiz-cta-inner">
-        <div class="quiz-cta-text">
-          <div class="section-label">Mini Quiz</div>
-          <h2 class="section-title">Testează-ți cunoștințele!</h2>
-          <p class="section-sub">Ai citit ghidul? Acum e timpul să vedem cât de bine ai înțeles. Răspunde la câteva întrebări despre AI responsabil.</p>
-          <a href="minigames.html" class="btn-primary quiz-cta-btn">
-            <img src="images/icon-quiz.svg" alt="" class="btn-icon" onerror="this.style.display='none'" />
-            Deschide Quiz-ul
-          </a>
+      <div class="quiz-qr-inner">
+        <div class="quiz-qr-text">
+          <div class="section-tag">MINI QUIZ</div>
+          <h2 class="section-title">TESTEAZĂ-ȚI CUNOȘTINȚELE!</h2>
+          <p class="section-sub">Scanează codul QR cu telefonul sau apasă butonul pentru a deschide quiz-ul despre AI responsabil.</p>
+          <a href="https://wayground.com/join?gc=17623646&source=liveDashboard" target="_blank" class="btn-white quiz-link-btn">DESCHIDE QUIZ-UL</a>
+          <p class="quiz-hint">* Funcționează și de pe telefon prin QR</p>
         </div>
-        <div class="quiz-cta-image">
-          <img src="images/quiz-illustration.svg" alt="Quiz ilustrație" class="quiz-hero-img" onerror="this.replaceWith(document.createTextNode(''))" />
-          <div class="quiz-img-placeholder">
-            <div class="qip-inner">
-              <div class="qip-icon">
-                <img src="images/icon-gamepad.svg" alt="" onerror="this.style.display='none'" />
-              </div>
-              <span>Quiz ilustrație</span>
-            </div>
+        <div class="quiz-qr-block">
+          <div class="qr-frame">
+            <img id="qr-img" src="" alt="QR Code Quiz" />
           </div>
+          <p class="qr-label">SCANEAZĂ PENTRU QUIZ</p>
         </div>
       </div>
     </div>
@@ -132,26 +121,35 @@
 
   <section id="faq" class="section">
     <div class="container">
-      <div class="section-label">07 — Întrebări</div>
-      <h2 class="section-title">Întrebări Frecvente</h2>
-      <p class="section-sub">Răspunsuri la cele mai comune nelămuriri despre inteligența artificială.</p>
+      <div class="section-tag">07 - ÎNTREBĂRI</div>
+      <h2 class="section-title">ÎNTREBĂRI FRECVENTE</h2>
       <div class="faq-list" id="faq-list"></div>
     </div>
   </section>
 
-  <section id="scoala" class="section section-soft">
+  <section id="scoala" class="section section-yellow scoala-section-wrap">
     <div class="container">
-      <div class="section-label">08 — Proiect școlar</div>
-      <h2 class="section-title">AI în școala noastră</h2>
+      <div class="section-tag">08 - PROIECT ȘCOLAR</div>
+      <h2 class="section-title">AI ÎN ȘCOALA NOASTRĂ</h2>
       <p class="section-sub">Cum am explorat și aplicat inteligența artificială în cadrul activităților școlare.</p>
       <div class="scoala-layout">
-        <div class="scoala-text reveal">
+        <div class="scoala-text">
           <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text.</p>
           <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text.</p>
           <p>Text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text.</p>
         </div>
-        <div class="scoala-image reveal">
-          <img src="https://blocks.astratic.com/img/general-img-landscape.png" alt="AI în școala noastră" />
+        <div class="scoala-image">
+          <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=900&q=80" alt="AI in scoala" />
+        </div>
+      </div>
+    </div>
+    <div class="wip-overlay">
+      <div class="wip-inner">
+        <div class="wip-tag">ÎN LUCRU</div>
+        <div class="wip-title">ÎN CURÂND</div>
+        <p class="wip-sub">Această secțiune este în curs de realizare.<br/>Revino curând!</p>
+        <div class="wip-dots">
+          <span></span><span></span><span></span>
         </div>
       </div>
     </div>
