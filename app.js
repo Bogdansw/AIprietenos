@@ -242,6 +242,20 @@ const DATA = {
   },
 };
 
+function toggleMenu() {
+  const menu = document.getElementById("mobile-menu");
+  const btn = document.getElementById("hamburger");
+  menu.classList.toggle("open");
+  btn.classList.toggle("open");
+}
+
+function closeMenu() {
+  const menu = document.getElementById("mobile-menu");
+  const btn = document.getElementById("hamburger");
+  menu.classList.remove("open");
+  btn.classList.remove("open");
+}
+
 function renderQR() {
   const img = document.getElementById("qr-img");
   const btn = document.querySelector(".quiz-link-btn");
