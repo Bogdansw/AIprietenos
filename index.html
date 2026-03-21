@@ -26,8 +26,21 @@
         <li><a href="#faq">FAQ</a></li>
       </ul>
       <button class="nav-cta" onclick="document.getElementById('scoala').scrollIntoView({behavior:'smooth'})">AI ÎN ȘCOALA NOASTRĂ</button>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Meniu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#ce-este" onclick="closeMenu()">CE ESTE AI</a>
+    <a href="#domenii" onclick="closeMenu()">DOMENII</a>
+    <a href="#avantaje" onclick="closeMenu()">AVANTAJE</a>
+    <a href="#riscuri" onclick="closeMenu()">RISCURI</a>
+    <a href="#siguranta" onclick="closeMenu()">SIGURANȚĂ</a>
+    <a href="#faq" onclick="closeMenu()">FAQ</a>
+    <a href="#scoala" class="mobile-cta" onclick="closeMenu()">AI ÎN ȘCOALA NOASTRĂ</a>
+  </div>
 
   <section id="hero">
     <div class="hero-pattern"></div>
