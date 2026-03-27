@@ -530,12 +530,84 @@ function initNavbar() {
   });
 }
 
+const galleryState = {};
+
+function galleryInit() {
+  document.querySelectorAll('.gallery-carousel').forEach(carousel => {
+    const id = carousel.dataset.id;
+    const slides = carousel.querySelectorAll('.gallery-slide');
+    galleryState[id] = { current: 0, total: slides.length };
+
+    slides.forEach(slide => {
+      const img = slide.querySelector('img');
+      if (!img) return;
+      if (!img.src || img.src === window.location.href) {
+        img.classList.add('img-error');
+        return;
+      }
+      img.addEventListener('error', () => {
+        img.classList.add('img-error');
+        img.style.display = 'none';
+        const ph = slide.querySelector('.gallery-placeholder');
+        if (ph) ph.style.display = 'flex';
+      });
+      img.addEventListener('load', () => {
+        const ph = slide.querySelector('.gallery-placeholder');
+        if (ph && !img.classList.contains('img-error')) ph.style.display = 'none';
+      });
+      if (img.complete && img.naturalWidth === 0) {
+        img.dispatchEvent(new Event('error'));
+      }
+    });
+  });
+}
+
+function galleryGoTo(id, index) {
+  const carousel = document.querySelector(`[data-id="${id}"]`);
+  if (!carousel || !galleryState[id]) return;
+  const state = galleryState[id];
+  state.current = Math.max(0, Math.min(index, state.total - 1));
+  const track = carousel.querySelector('.gallery-track');
+  if (track) track.style.transform = `translateX(-${state.current * 100}%)`;
+  const counter = carousel.querySelector('.gallery-current');
+  if (counter) counter.textContent = state.current + 1;
+  carousel.querySelectorAll('.gallery-dot').forEach((dot, i) => {
+    dot.classList.toggle('active', i === state.current);
+  });
+}
+
+function galleryNext(id) {
+  if (!galleryState[id]) return;
+  const { current, total } = galleryState[id];
+  galleryGoTo(id, (current + 1) % total);
+}
+
+function galleryPrev(id) {
+  if (!galleryState[id]) return;
+  const { current, total } = galleryState[id];
+  galleryGoTo(id, (current - 1 + total) % total);
+}
+
+function galleryInitSwipe() {
+  document.querySelectorAll('.gallery-carousel').forEach(carousel => {
+    let startX = 0;
+    carousel.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+    carousel.addEventListener('touchend', e => {
+      const diff = startX - e.changedTouches[0].clientX;
+      const id = carousel.dataset.id;
+      if (Math.abs(diff) > 40) diff > 0 ? galleryNext(id) : galleryPrev(id);
+    }, { passive: true });
+  });
+}
+
 const isIndexPage = document.getElementById("ce-este-content") !== null;
 const isQuizPage = document.getElementById("quiz-card") !== null;
 
 document.addEventListener("DOMContentLoaded", () => {
   renderFooter();
   initNavbar();
+  galleryInit();
+  galleryInitSwipe();
 
   if (isIndexPage) {
     renderMarquee();
